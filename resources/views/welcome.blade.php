@@ -25,6 +25,7 @@
         const resumable = new Resumable({
             target: '/upload',
             uploadMethod: 'POST',
+            chunkRetryInterval: 10000,
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="token"]').attr('content')
             }
