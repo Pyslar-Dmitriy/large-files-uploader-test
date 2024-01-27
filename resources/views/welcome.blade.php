@@ -47,6 +47,7 @@
 
         function uploadFile() {
             resumable.upload()
+            document.getElementById('file-name').innerText = 'Uploading in progress...'
         }
     </script>
 
